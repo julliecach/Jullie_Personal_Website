@@ -1,0 +1,32 @@
+*{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    padding: 5px;
+    margin: 5px;
+  }
+
+#julliec {
+    background-color: #0ba6cc;
+}
+nav a {
+    text-decoration: none;
+    color: #f2e9e9
+    margin-right: 15px;
+}
+
+th {
+    padding: 12px;
+    background-color: #044335;
+    color: aliceblue;
+    width: fit-content;
+}
+
+form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
