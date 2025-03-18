@@ -73,12 +73,24 @@ function addYear() {
     var d = new Date();
     var y = d.getFullYear();
     var E = document.getElementById("copyYear");
-    E.innerHTML=y;
+    E.innerHTML+=y;
 }
 addYear();
 
 function showList() {
-    document.getElementById("activities").style.display = 'block';
-    document.getElementById("showButton").style.display = 'none';
+    document.getElementById("activities").style.display = "block";
+    document.getElementById("showButton").style.display = "none";
 }
 showList();
+
+$("#readLess").click(function(){
+    $("#longIntro").show();
+    $("#readLess").show();
+    $("#readMore").hide();
+});
+
+$("#readMore").click(function(){
+    $("#longIntro").show();
+    $("#readLess").show();
+    $("#readMore").hide();
+});
