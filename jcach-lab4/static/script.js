@@ -75,22 +75,31 @@ function addYear() {
     var E = document.getElementById("copyYear");
     E.innerHTML+=y;
 }
-addYear();
+
 
 function showList() {
     document.getElementById("activities").style.display = "block";
     document.getElementById("showButton").style.display = "none";
 }
-showList();
 
-$("#readLess").click(function(){
+$("#readLess").click(function() {
+    $("#longIntro").hide();
+    $("#readLess").hide();
+    $("#readMore").show();
+});
+
+$("#readMore").click(function() {
     $("#longIntro").show();
     $("#readLess").show();
     $("#readMore").hide();
 });
 
-$("#readMore").click(function(){
-    $("#longIntro").show();
-    $("#readLess").show();
-    $("#readMore").hide();
-});
+function validate() {
+    var userName = document.getElementById("UserName");
+    var userEmail = document.getElementById("Yemail");
+    var userText = document.getElementById("Ycomment");
+    var msg= document.getElementById("ValidateMSG");
+    if (!userName.checkValidity() || !userEmail.checkValidity() || !userText.checkValidity()) {
+        msg.innerHTML = "Please Fill Out The Form Correctly So I Can Get Back To You!"
+    }
+}
