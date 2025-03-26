@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jullie Cach">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Jullie Cach professional website">
+<title>Jullie Cach</title>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="julliec">Julissa Cach</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="fun.html">For Fun</a>
+        </nav>
+    </header>
+        <div class="mainLayout">
+            <div>
+                <h2>Things I love to do for fun</h2>
+               <!---- <button id="showButton" onclick="showList()">Click to see...</button> -->
+                <ul id="activities">
+                    <li>Singing</li>
+                    <li>Dancing</li>
+                    <li>Journaling</li>
+                    <li>Baking</li>
+                    <li>Creating playlists and exploring new music</li>
+                </ul>
+            </div>
+            <div class="funIMG"> 
+                <img src="../static/Group copy.JPG" alt="DFS Group Photo" id="dfsPhoto" width="350", height="350">
+            </div>
+            <div>
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/o-9IDUVp9JI?si=ci8JkUrKZo9mmXAF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="container">
+                <h2>Need Advice?</h2>
+                <p id="adviceText"> Click on the button to get random piece of advice!</p>
+                <button id="adviceButton" onclick="getAdvice()">Click the Button!</button>
+            </div>
+            
+        </div>
+
+        <footer>
+            <p id="copyYear">designed 👩🏻‍🎨 and coded 👩🏻‍💻 by Jullie Cach &copy; </p>
+        </footer>
+</body>
+</html>
