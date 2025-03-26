@@ -12,16 +12,22 @@
     <title>Jullie Cach</title>
 </head>
 <body onload="addYear()">
-    <header>
-        <h1 id="julliec">Jullie Cach</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="views/cv.html">CV</a>
-            <a href="views/contact.html">Contact Me</a>
-            <a href="views/fun.html">For Fun</a>
+    <div class="grid-container">
+        <header>
+            <h1 id="julliec">Jullie Cach</h1>
+        </header>
+        <nav id="nav" class="navBar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="views/cv.html" class="nav-link">CV</a>
+            <a href="views/contact.html" class="nav-link">Contact Me</a>
+            <a href="views/fun.html" class="nav-link">For Fun</a>
+            <a href="./template.html" class="nav-link">Template Page</a>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars" onclick="activeNav()"></i>
+            </a>
         </nav>
-    </header>
-        <div class = "main">
+        <main class="main">
+            <div class = "mainimg">
                 <h2 id="greeting"> Hi, my name is Jullie Cach!</h2>
                 <img src="static/IMG_4825.png" alt="Jullie Cach photo" width="350" height ="450">
                 <!--p id="intro">I am a freshman at Carnegie Mellon University majoring in Information Systems; I also plan to double major in Business Administration. I am involved in SALSA, CSharps choir, D FLat Singers (DFS), and SHPE. 
@@ -37,5 +43,9 @@
         <footer>
             <p id="copyYear">designed 👩🏻‍🎨 and coded 👩🏻‍💻 by Jullie Cach &copy; </p>
         </footer>
+        </main>
+            
+    </div>
+    
 </body>
 </html>
