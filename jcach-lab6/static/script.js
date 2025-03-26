@@ -117,4 +117,11 @@ function getAdvice() {
     });
 }
 
-console.log(window.location);
+function activeNav() {
+    var x = document.getElementById("nav");
+    if (x.className === "navBar") {
+        x.className += "respnsive";
+    } else {
+        x.className = "navBar";
+    }
+}

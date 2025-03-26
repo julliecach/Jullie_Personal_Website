@@ -192,5 +192,15 @@ nav {
 }
 
 @media screen and (max-width: 650) {
-    .nav
+    .navBar.responsive {position: relative;}
+    .navBar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navBar.responsive a.icon {
+        display: block;
+        text-align: left;
+        float: none;
+    }
 }
